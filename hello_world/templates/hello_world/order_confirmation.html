@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Order Confirmed</title></head>
+<body>
+  <h2>Order Confirmed!</h2>
+  <p>Thank you, <strong>{{ user.first_name }}</strong>!</p>
+  <p>You ordered: <strong>{{ product.name }}</strong></p>
+  <p>Cost: <strong>£{{ product.cost }}</strong></p>
+  <p>Order ID: #{{ order.id }}</p>
+  <br>
+  <a href="{% url 'products' %}">Back to Products</a> |
+  <a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>
